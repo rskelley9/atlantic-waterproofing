@@ -3,10 +3,10 @@ AltaJuly::Application.routes.draw do
   root to: 'home#index'
 
 
-  comfy_route :cms_admin, :path => '/admin'
+  comfy_route :cms_admin, :path => '/cms-admin'
 
   # Make sure this routeset is defined last
-  comfy_route :cms, :path => '/', :sitemap => false
+  comfy_route :cms, :path => '/en', :sitemap => false
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

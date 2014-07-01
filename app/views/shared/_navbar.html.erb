@@ -23,7 +23,7 @@
                 About <b class="caret"></b>
               </a>
               <ul class="dropdown-menu">
-                <li><%= link_to 'Our Team', page_path('our-team'), tabindex: "-1" %></li>
+                <li><%= link_to 'Our Team', page_path('about-owner'), tabindex: "-1" %></li>
                 <li class="divider"></li>
                 <li>
                   <%= link_to 'Our History', page_path('about'), tabindex: "-1" %>
@@ -48,13 +48,15 @@
            Services <b class="caret"></b>
           </a>
           <ul class="dropdown-menu">
-            <li><a tabindex="-1" href="/appointments/">General Information</a></li>
+            <li>
+            <%= link_to 'The Services We Provide', page_path('services'), tabindex: "-1" %>
+            </li>
             <li class="divider"></li>
             <li>
               <%= link_to 'Portfolio', '#', tabindex: "-1" %>
             </li>
             <li class="divider"></li>
-            <li><%= link_to 'Service Area', page_path('services'), tabindex: "-1" %></li>
+            <li><%= link_to 'Service Area', page_path('service-page'), tabindex: "-1" %></li>
             <li class="divider"></li>
           </ul>
         </li>

@@ -4,6 +4,7 @@
 
 body {
   margin-top: 125px !important;
+  font-family: 'Ubuntu', sans-serif !important;
 }
 
 
@@ -22,3 +23,10 @@ footer {
   max-width: 1000px;
 }
 
+.tab-text p{
+  padding: 15px;
+}
+
+.page.container .container{
+  margin-top: 50px;
+}

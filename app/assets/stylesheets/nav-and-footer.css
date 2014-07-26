@@ -3,13 +3,23 @@
   text-align:center;
 }
 
-#nav-logo{
-  max-width: 150px;
+#image-top{
+  max-width: 400px !important;
+}
+
+.navbar-collapse{
+  margin-top: 100px;
+}
+
+a.navbar-brand #nav-logo{
+/*  width: 500px;
+  height: 250px;*/
+  max-width: 500px;
 }
 
 .navbar-inverse .navbar-nav>li>a:hover, .navbar-inverse .navbar-nav>li>a:focus {
 /*  color: #ffffff !important;
-  background-color: rgba(23, 138, 204, 0.79) !important;*/
+background-color: rgba(23, 138, 204, 0.79) !important;*/
 }
 
 /*.navbar {
@@ -21,43 +31,43 @@
   filter: none;
   -webkit-box-shadow: 0 1px 10px rgba(0,0,0,0.1) !important;
   box-shadow: 0 1px 10px rgba(0,0,0,0.1);
-}*/
+  }*/
 
-.foot-links-item{
-  max-width: 100px;
-  margin: 0 auto !important;
+  .foot-links-item{
+    max-width: 100px;
+    margin: 0 auto !important;
 
-}
+  }
 
-.foot-links-link{
-  padding: 2px !important;
+  .foot-links-link{
+    padding: 2px !important;
 
-}
+  }
 
-#footer-container{
-  margin-left: 15%;
-}
+  #footer-container{
+    margin-left: 15%;
+  }
 
-.foot-links-link:hover{
-  background: transparent !important;
+  .foot-links-link:hover{
+    background: transparent !important;
 
-}
+  }
 
-#footer-contact{
-  text-align: justify;
-  padding-left: 10px;
-  padding-right: 0px;
-}
+  #footer-contact{
+    text-align: justify;
+    padding-left: 10px;
+    padding-right: 0px;
+  }
 
-#email{
-  text-align:left !important;
-  width: 120%;
-}
+  #email{
+    text-align:left !important;
+    width: 120%;
+  }
 
-.footer-header{
-  text-decoration: underline;
-}
+  .footer-header{
+    text-decoration: underline;
+  }
 
-.footer-content{
-  margin-bottom: 1px;
-}
+  .footer-content{
+    margin-bottom: 1px;
+  }

@@ -8,7 +8,22 @@
 }
 
 .navbar-collapse{
-  margin-top: 100px;
+  /*margin-top: 100px;*/
+/*  margin-top: 7%;*/
+margin-top: 5%;
+}
+
+a.navbar-brand{
+padding:0px;
+margin:0px;
+}
+
+ul.navbar-right{
+  padding-bottom: 0px !important;
+}
+
+.navbar-fixed-top .nav {
+padding: 15px;
 }
 
 .navbar-nav.navbar-right:last-child {
@@ -16,9 +31,8 @@ margin-right: -10px !important;
 }
 
 a.navbar-brand #nav-logo{
-/*  width: 500px;
-  height: 250px;*/
-  max-width: 500px;
+/*  max-width: 500px;*/
+max-width: 300px;
 }
 
 .navbar-inverse .navbar-nav>li>a:hover, .navbar-inverse .navbar-nav>li>a:focus {

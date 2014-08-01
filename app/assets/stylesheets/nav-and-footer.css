@@ -1,3 +1,7 @@
+.navbar.navbar-inverse.navbar-fixed-top{
+  /*position: absolute;*/ /*absolute*/
+}
+
 #copyright{
   /*margin-left:20px;*/
   text-align:center;
@@ -13,9 +17,9 @@
 }
 
 .navbar-collapse{
-  /*margin-top: 100px;*/
-  /*  margin-top: 7%;*/
-  margin-top: 5%;
+ /* margin-top: 100px;*/
+ /* margin-top: 7%;*/ /*absolute*/
+  margin-top: 5%; /*fixed setting*/
 }
 
 a.navbar-brand{
@@ -36,8 +40,8 @@ ul.navbar-right{
 }
 
 a.navbar-brand #nav-logo{
-  /*  max-width: 500px;*/
-  max-width: 300px;
+    /*max-width: 500px;*/ /*absolute*/
+  max-width: 300px;  /*fixed-setting*/
 }
 
 .navbar-inverse .navbar-nav>li>a:hover, .navbar-inverse .navbar-nav>li>a:focus {

@@ -6,3 +6,15 @@
   margin-top: 10%;
   padding-left: 0px;
 }
+
+.img-rounded.tabs{
+  max-width: 100%;
+}
+
+.row.tabs-description{
+  margin-top: 3%;
+}
+
+.row.tabs-description .info{
+padding-right: 3%;
+}

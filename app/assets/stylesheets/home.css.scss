@@ -16,9 +16,10 @@ margin-top: 5%;
   height: 89%;
 }
 
-
-.navbar-fixed-top .nav {
-padding: 15px 0 !important;
+.org-logo{
+  max-width: 150px;
+  max-height: 150px;
+  margin: 0 auto;
 }
 
 footer {
@@ -37,5 +38,6 @@ padding: 15px;
 }
 
 .page.container .container{
-margin-top: 10%;
+// margin-top: 10%;
+margin-top: 3%;
 }

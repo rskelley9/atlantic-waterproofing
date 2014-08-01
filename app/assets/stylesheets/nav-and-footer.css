@@ -1,3 +1,7 @@
+.navbar.navbar-inverse.navbar-fixed-top{
+  /*position: absolute;*/ /*absolute*/
+}
+
 #copyright{
   /*margin-left:20px;*/
   text-align:center;
@@ -7,18 +11,37 @@
   max-width: 400px !important;
 }
 
+#footer-services{
+  padding-left:0px;
+  margin-left: 2%;
+}
+
 .navbar-collapse{
-  margin-top: 100px;
+ /* margin-top: 100px;*/
+ /* margin-top: 7%;*/ /*absolute*/
+  margin-top: 5%; /*fixed setting*/
+}
+
+a.navbar-brand{
+  padding:0px;
+  margin:0px;
+}
+
+ul.navbar-right{
+  padding-bottom: 0px !important;
+}
+
+.navbar-fixed-top .nav {
+  padding: 15px;
 }
 
 .navbar-nav.navbar-right:last-child {
-margin-right: -10px !important;
+  margin-right: -10px !important;
 }
 
 a.navbar-brand #nav-logo{
-/*  width: 500px;
-  height: 250px;*/
-  max-width: 500px;
+    /*max-width: 500px;*/ /*absolute*/
+  max-width: 300px;  /*fixed-setting*/
 }
 
 .navbar-inverse .navbar-nav>li>a:hover, .navbar-inverse .navbar-nav>li>a:focus {
@@ -48,8 +71,12 @@ background-color: rgba(23, 138, 204, 0.79) !important;*/
 
   }
 
+  #footer-services{
+    list-style:none;
+  }
+
   #footer-container{
-    margin-left: 15%;
+    /*margin-left: 15%;*/
   }
 
   .foot-links-link:hover{

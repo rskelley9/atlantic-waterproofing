@@ -18,3 +18,7 @@
 .row.tabs-description .info{
 padding-right: 3%;
 }
+
+#myTab li.active{
+  font-size:24px;
+}

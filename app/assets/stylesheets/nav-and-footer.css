@@ -6,6 +6,20 @@
   /*margin-left:20px;*/
   text-align:center;
 }
+.navbar-collapse{
+ /* margin-top: 100px;*/
+  /*margin-top: 7%;*/ /*absolute*/
+  margin-top: 5%; /*fixed setting*/
+}
+
+a.navbar-brand #nav-logo{
+  /*absolute*/
+/*    max-width: 500px;
+    margin-left: -30px;*/
+     /*absolute*/
+  max-width: 300px;  /*fixed-setting*/
+
+}
 
 #image-top{
   max-width: 400px !important;
@@ -14,12 +28,6 @@
 #footer-services{
   padding-left:0px;
   margin-left: 2%;
-}
-
-.navbar-collapse{
- /* margin-top: 100px;*/
- /* margin-top: 7%;*/ /*absolute*/
-  margin-top: 5%; /*fixed setting*/
 }
 
 a.navbar-brand{
@@ -39,10 +47,6 @@ ul.navbar-right{
   margin-right: -10px !important;
 }
 
-a.navbar-brand #nav-logo{
-    /*max-width: 500px;*/ /*absolute*/
-  max-width: 300px;  /*fixed-setting*/
-}
 
 .navbar-inverse .navbar-nav>li>a:hover, .navbar-inverse .navbar-nav>li>a:focus {
 /*  color: #ffffff !important;
@@ -85,14 +89,14 @@ background-color: rgba(23, 138, 204, 0.79) !important;*/
   }
 
   #footer-contact{
-    text-align: justify;
+  /*  text-align: justify;*/
     padding-left: 10px;
     padding-right: 0px;
   }
 
   #email{
-    text-align:left !important;
-    width: 120%;
+  /*  text-align:left !important;*/
+/*    width: 120%;*/
   }
 
   .footer-header{

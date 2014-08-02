@@ -1,7 +1,7 @@
     <div class="container home">
 
       <div class="row" id="frontpage-picture-large">
-        <div class="col-lg-6">
+        <div class="col-md-6">
           <h1>Alta Waterproofing, LLC</h1>
           <p>Alta waterproofing is the new choice for quality waterproofing construction services in the Mid-Atlantic region. Whether you are in the commercial, industrial, institutional, high-rise residential or sport complex markets; ALTA can serve your needs. From new construction, renovation and maintenance services; ALTA has the technical background and expertise to professionally manage your projects.</p>
           <p>
@@ -9,7 +9,7 @@
           </p>
           <a class="btn btn-primary btn-lg" href="tel:410-379-0095">Call Now</a>
         </div>
-        <div class="col-lg-6">
+        <div class="col-md-6">
           <!-- <img class="img-responsive img-rounded" src="http://placehold.it/900x350"> -->
           <%= image_tag "office.JPG", class: "img-responsive img-rounded", id:"top-img"%>
           <!-- take out img-rounded if you don't want the rounded corners on the image -->
@@ -35,10 +35,8 @@
 
       <%= render partial: "shared/frontpage_slideshow" %>
 
-      <%= render partial: "shared/frontpage_section" %>
+        <hr>
 
       <%= render partial: "shared/service_area_map.html.erb" %>
-
-      <%= render partial: "shared/front_tabs" %>
 
     </div>

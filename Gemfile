@@ -18,6 +18,9 @@ gem 'backstretch-rails'
 #Static Pages
 gem 'high_voltage'
 
+# For settting environmental variabls
+gem 'figaro'
+
 # Forms
 gem 'simple_form'
 

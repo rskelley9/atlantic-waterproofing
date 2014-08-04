@@ -28,7 +28,7 @@ module AltaJuly
 			config.action_mailer.smtp_settings = {
 				:address              => "smtp.gmail.com",
 				:port                 => 587,
-				:domain               => "yourdomain.dev",
+				:domain               => "altawp.com",
 				:user_name            => ENV["GMAIL_USERNAME_DEV"],
 				:password             => ENV["GMAIL_USERNAME_PRO",
 				:authentication       => :plain,

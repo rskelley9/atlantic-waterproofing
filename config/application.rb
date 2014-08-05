@@ -17,7 +17,7 @@ module AltaJuly
 				:port                 => 587,
 				:domain               => "yourdomain.dev",
 				:user_name            => ENV["GMAIL_USERNAME_DEV"],
-				:password             => ENV["GMAIL_USERNAME_PRO",
+				:password             => ENV["GMAIL_USERNAME_PRO"],
 				:authentication       => :plain,
 				:enable_starttls_auto => true
 			}
@@ -30,7 +30,7 @@ module AltaJuly
 				:port                 => 587,
 				:domain               => "altawp.com",
 				:user_name            => ENV["GMAIL_USERNAME_DEV"],
-				:password             => ENV["GMAIL_USERNAME_PRO",
+				:password             => ENV["GMAIL_USERNAME_PRO"],
 				:authentication       => :plain,
 				:enable_starttls_auto => true
 			}

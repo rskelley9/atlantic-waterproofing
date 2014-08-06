@@ -11,7 +11,7 @@ AltaJuly::Application.routes.draw do
   # Mailer Routes
 
   match 'contact-us' => 'contact#new', :as => 'contact', :via => :get
-  match 'contact-us' => 'contact#create', :as => 'contact', :via => :post
+  match 'contact-us' => 'contact#create', :via => :post
 
   # When a GET request is made to /contact, the new action is called.
   # When a POST request is made to /contact, the create action is called.

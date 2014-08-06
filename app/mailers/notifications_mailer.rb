@@ -1,7 +1,10 @@
 class NotificationsMailer < ActionMailer::Base
 
-  default :from => "winstedwarrior@gmail.com"
+  sender_email_address = "winstedwarrior@gmail.com"
+
+  default :from => sender_email_address
   default :to => "rskelley9@gmail.com"
+  default "reply-to" => sender_email_address
 
   def new_message(message)
     @message = message

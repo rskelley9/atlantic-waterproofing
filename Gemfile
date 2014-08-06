@@ -24,6 +24,9 @@ gem 'figaro'
 # Forms
 gem 'simple_form'
 
+# Email testing
+gem "letter_opener", :group => :development
+
 #Flash messages
 gem "bootstrap_flash_messages", "~> 1.0.0"
 

@@ -24,6 +24,9 @@ gem 'figaro'
 # Forms
 gem 'simple_form'
 
+#Flash messages
+gem "bootstrap_flash_messages", "~> 1.0.0"
+
 gem 'comfortable_mexican_sofa', '~> 1.12.1'
 
 # Use Uglifier as compressor for JavaScript assets

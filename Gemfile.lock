@@ -32,6 +32,7 @@ GEM
       railties (> 3.1)
     bootstrap-sass (3.1.1.1)
       sass (~> 3.2)
+    bootstrap_flash_messages (1.0.0)
     bootstrap_form (2.1.1)
     builder (3.1.4)
     climate_control (0.0.3)
@@ -169,6 +170,7 @@ PLATFORMS
 
 DEPENDENCIES
   backstretch-rails
+  bootstrap_flash_messages (~> 1.0.0)
   coffee-rails (~> 4.0.0)
   comfortable_mexican_sofa (~> 1.12.1)
   figaro

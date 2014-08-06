@@ -16,11 +16,18 @@
 
  <%= render partial: "shared/navbar.html.erb"%>
 
+<%= notice %>
+<%= alert %>
+
+<% if flash[:notice] %>
+    <div id="notice"><%= flash[:notice] %></div>
+<% end %>
  <div class="page container">
   <%= yield %>
 </div>
 
 <%= render partial: "shared/foot/footer" %>
+
 
 </body>
 </html>

@@ -10,18 +10,25 @@
   <!-- <link href="//maxcdn.bootstrapcdn.com/bootswatch/3.2.0/simplex/bootstrap.min.css" rel="stylesheet"> -->
   <link href="//maxcdn.bootstrapcdn.com/bootswatch/3.2.0/readable/bootstrap.min.css" rel="stylesheet">
   <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+
+  <!-- boostrap client-side validations -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-validator/0.4.5/css/bootstrapvalidator.min.css" rel="stylesheet">
   <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+
+  <!-- boostrap client-side validations -->
+
+  <script src="//cdnjs.cloudflare.com/ajax/libs/bootstrap-validator/0.4.5/js/bootstrapvalidator.min.js"></script>
 </head>
 <body>
 
  <%= render partial: "shared/navbar.html.erb"%>
 
-<%= notice %>
-<%= alert %>
+ <%= notice %>
+ <%= alert %>
 
-<% if flash[:notice] %>
-    <div id="notice"><%= flash[:notice] %></div>
-<% end %>
+ <% if flash[:notice] %>
+ <div id="notice"><%= flash[:notice] %></div>
+ <% end %>
  <div class="page container">
   <%= yield %>
 </div>

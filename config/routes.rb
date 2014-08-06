@@ -8,6 +8,15 @@ AltaJuly::Application.routes.draw do
   # Make sure this routeset is defined last
   comfy_route :cms, :path => '/en', :sitemap => false
 
+  # Mailer Routes
+
+  match 'contact-us' => 'contact#new', :as => 'contact', :via => :get
+  match 'contact-us' => 'contact#create', :via => :post
+
+  # When a GET request is made to /contact, the new action is called.
+  # When a POST request is made to /contact, the create action is called.
+
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

@@ -7,17 +7,38 @@ require 'rails/all'
 Bundler.require(:default, Rails.env)
 
 module AltaJuly
-  class Application < Rails::Application
-    # Settings in config/environments/* take precedence over those specified here.
-    # Application configuration should go into files in config/initializers
-    # -- all .rb files in that directory are automatically loaded.
+	class Application < Rails::Application
 
-    # Set Time.zone default to the specified zone and make Active Record auto-convert to this zone.
-    # Run "rake -D time" for a list of tasks for finding time zone names. Default is UTC.
-    # config.time_zone = 'Central Time (US & Canada)'
 
-    # The default locale is :en and all translations from config/locales/*.rb,yml are auto loaded.
-    # config.i18n.load_path += Dir[Rails.root.join('my', 'locales', '*.{rb,yml}').to_s]
-    # config.i18n.default_locale = :de
-  end
+		if Rails.env.development?
+
+			config.action_mailer.smtp_settings = {
+				:address              => "smtp.gmail.com",
+				:port                 => 587,
+				:domain               => "yourdomain.dev",
+				:user_name            => ENV["GMAIL_USERNAME_DEV"],
+				:password             => ENV["GMAIL_PASSWORD_DEV"],
+				:authentication       => :plain,
+				:enable_starttls_auto => true
+			}
+		end
+
+
+		if Rails.env.production?
+			config.action_mailer.smtp_settings = {
+				:address              => "smtp.gmail.com",
+				:port                 => 587,
+				:domain               => "altawp.com",
+				:user_name            => ENV["GMAIL_USERNAME_PRO"],
+				:password             => ENV["GMAIL_PASSWORD_PRO"],
+				:authentication       => :plain,
+				:enable_starttls_auto => true
+			}
+		end
+
+		config.action_mailer.default_url_options = {
+			:host => "yourdomain.dev"
+		}
+
+	end
 end

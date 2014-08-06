@@ -24,6 +24,12 @@ gem 'figaro'
 # Forms
 gem 'simple_form'
 
+# Email testing
+gem "letter_opener", :group => :development
+
+#Flash messages
+gem "bootstrap_flash_messages", "~> 1.0.0"
+
 gem 'comfortable_mexican_sofa', '~> 1.12.1'
 
 # Use Uglifier as compressor for JavaScript assets

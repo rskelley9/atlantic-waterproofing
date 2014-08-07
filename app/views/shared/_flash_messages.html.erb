@@ -1,9 +1,27 @@
 <% flash.each do |type, message| %>
-  <div class="alert <%= bootstrap_class_for(type) %> fade in alert-block">
-    <button type="button" class="close" data-dismiss="alert">&times;</button>
-    <% if type == :error %>
-    <h4>Uh-Oh, you made a mistake!</h4>
-    <%end%>
-    <%= message %>
+<div class="alert <%= bootstrap_class_for(type) %> fade in alert-block">
+  <button type="button" class="close" data-dismiss="alert">&times;</button>
+
+  <% if @message.errors.any? %>
+  <h4>Uh-Oh, you made a mistake!</h4>
+
+  <div id="error_explanation">
+    The form contains <%= pluralize(@message.errors.count, "error") %>.
+    <ul>
+      <% @message.errors.full_messages.each do |msg| %>
+      <li>
+        * <%= msg %>
+      </li>
+      <% end %>
+    </ul>
   </div>
+
+  <% else %>
+
+  <%= message %>
+
+  <% end %>
+
+</div>
+
 <% end %>

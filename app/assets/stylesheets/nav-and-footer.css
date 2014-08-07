@@ -1,9 +1,43 @@
-@media (max-width: 978px) {
+@media (min-width: 1200px) {
   img#nav-logo{
-    max-width: 100px;
+    max-height: 350px;
+    max-width: 350px;
+    padding-bottom:0%;
+    margin-top: -7%;
+    margin-left:-10%;
+  }
+
+  ul.nav.navbar-nav.navbar-right{
+    margin-right: 3% !important;
+  }
+
+  ul.nav.navbar-nav li a{
+    margin-bottom: 0%;
+  }
+}
+
+@media (min-width: 979px) and (max-width: 1199px) {
+  img#nav-logo{
+    max-height: 135px;
+    padding-bottom:0%;
+    margin-top: -7%;
+    margin-left:-5%;
+  }
+  .collapse.navbar-collapse#bs-example-navbar-collapse-1{
+    margin-top: 3%; /*fixed setting*/
+  }
+
+  ul.nav.navbar-nav li a{
+    margin-bottom: 0%;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 978px) {
+  img#nav-logo{
     max-height: 100px;
     padding-bottom:2%;
     margin-top: -7%;
+    margin-left:5%;
   }
   .collapse.navbar-collapse#bs-example-navbar-collapse-1{
     margin-top: 0%; /*fixed setting*/
@@ -44,7 +78,7 @@ a.navbar-brand #nav-logo{
 /*    max-width: 500px;
 margin-left: -30px;*/
 /*absolute*/
-max-width: 300px;  /*fixed-setting*/
+/*max-width: 300px; */ /*fixed-setting*/
 
 }
 

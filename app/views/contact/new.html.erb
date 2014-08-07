@@ -23,7 +23,7 @@
       <h3>Get in Touch with Our Office</h3>
       <p>You may contact us by phone or email, or use the form below and we will get back to you as soon as we can. We look forward to hearing from you.</p>
 
-      <%= form_for @message, role: "form", :url => contact_path do |form| %>
+      <%= form_for @message, role: "form", :html => { :honeypot => true }, :url => contact_path do |form| %>
       <div class="row">
         <div class="form-group col-lg-4">
           <%= form.label :first_name %>

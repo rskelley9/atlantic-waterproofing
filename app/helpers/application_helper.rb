@@ -15,4 +15,24 @@ module ApplicationHelper
       end
     end
 
+    def message_exists?(message)
+      if !(message.nil?) && message.instance_of?(Message)
+        true
+      else
+        false
+      end
+    end
+
+    def invalid_email_class_for(message)
+      if message.nil? || !(message.instance_of?(Message))
+        ""
+      end
+      if message.invalid? && message.errors[:email].any?
+        "has-error"
+      else
+        ""
+      end
+    end
+
+
   end

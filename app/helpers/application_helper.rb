@@ -23,16 +23,26 @@ module ApplicationHelper
       end
     end
 
-    def invalid_email_class_for(message)
-      if message.nil? || !(message.instance_of?(Message))
-        ""
-      end
-      if message.invalid? && message.errors[:email].any?
-        "has-error"
-      else
-        ""
+    def invalid_email_class_for(params_message)
+      if message_exists?(params_message) && !(params_message.email.nil?)
+        if params_message.invalid? && params_message.errors[:email].any?
+         return "has-error"
+       else
+        return ""
       end
     end
-
-
   end
+
+  def confirmation_error_for(params_message)
+    if message_exists?(params_message)  && !(params_message.email.nil?)
+
+      if params_message.invalid? && params_message.errors[:email_confirmation].any?
+        return "has-error"
+      else
+        return ""
+      end
+
+    end
+  end
+
+end

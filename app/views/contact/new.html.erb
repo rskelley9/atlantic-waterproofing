@@ -35,21 +35,16 @@
           <%= form.text_field :last_name, class: "form-control", id:"input2" %>
         </div>
 
-        <div class="form-group col-lg-4">
+        <div class="form-group col-lg-4 <%= invalid_email_class_for(@message) %>">
           <%= form.label :email %>
           <%= form.text_field :email, class: "form-control", id:"input3", required: true, pattern: ".+@.+\..+", type:"email" %>
         </div>
-          <% if @message.has_invalid_email? %>
-         <p style="color:red" class="help-block">Email address you entered is invalid.</p>
-        <%end%>
 
-        <div class="form-group col-lg-4">
+        <div class="form-group col-lg-4 <%= confirmation_error_for(@message) %>">
           <%= form.label :email_confirmation %>
           <%= form.text_field :email_confirmation, class: "form-control", id:"input4", required: true, pattern: ".+@.+\..+", type:"email" %>
         </div>
-        <% unless @message.has_confirmed_email? %>
-         <p style="color:red" class="help-block">Email and email confirmation must match.</p>
-        <%end%>
+
          <div class="form-group col-lg-4">
           <%= form.label :phone %>
           <%= form.text_field :phone, class: "form-control", id:"input5", type:"tel" %>

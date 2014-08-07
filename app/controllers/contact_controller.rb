@@ -6,14 +6,6 @@ class ContactController < ApplicationController
 
   def create
     @message = Message.new(params[:message])
-
-    p params
-    p "These are my params!!!!!!!!!"
-
-   p @message.errors[:email].any?
-
-    p @message.errors[:email_confirmation].any?
-
     if @message.valid?
       NotificationsMailer.new_message(@message).deliver
       redirect_to(root_path, :success => "Message was successfully sent.")

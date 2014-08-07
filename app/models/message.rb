@@ -22,6 +22,8 @@ class Message
     false
   end
 
+
+# these validation methods aren't necessary anymore
   def has_valid_email?
     email_regex = %r{.+@.+\..+}
 

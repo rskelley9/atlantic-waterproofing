@@ -16,12 +16,8 @@
 
  <%= render partial: "shared/navbar.html.erb"%>
 
-<%= notice %>
-<%= alert %>
+ <%= render partial: "shared/flash_messages", flash: flash %>
 
-<% if flash[:notice] %>
-    <div id="notice"><%= flash[:notice] %></div>
-<% end %>
  <div class="page container">
   <%= yield %>
 </div>

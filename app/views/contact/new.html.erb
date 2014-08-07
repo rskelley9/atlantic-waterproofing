@@ -43,18 +43,22 @@
         <div class="form-group col-lg-4">
           <%= form.label :email_confirmation %>
           <%= form.text_field :email_confirmation, class: "form-control", id:"input4", required: true, pattern: ".+@.+\..+", type:"email" %>
+        </div>
 
-
+         <div class="form-group col-lg-4">
+          <%= form.label :phone %>
+          <%= form.text_field :phone, class: "form-control", id:"input5", type:"tel" %>
+           <p class="help-block">Please enter an unformatted, ten digit phone number.</p>
         </div>
 
         <div class="form-group col-lg-4">
           <%= form.label :subject %>
-          <%= form.text_field :subject, class: "form-control", id:"input5" %>
+          <%= form.text_field :subject, class: "form-control", id:"input6" %>
         </div>
         <div class="clearfix"></div>
         <div class="form-group col-lg-12 field">
           <%= form.label :body %>
-          <%= form.text_area :body, class: "form-control", rows:"6", id:"input6" %>
+          <%= form.text_area :body, class: "form-control", rows:"6", id:"input7" %>
         </div>
         <div class="form-group col-lg-12">
           <input type="hidden" name="save" value="contact">

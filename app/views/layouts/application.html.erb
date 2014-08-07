@@ -16,11 +16,7 @@
 
  <%= render partial: "shared/navbar.html.erb"%>
 
- <% unless flash.empty? %>
-
  <%= render partial: "shared/flash_messages", flash: flash %>
-
- <% end %>
 
  <div class="page container">
   <%= yield %>

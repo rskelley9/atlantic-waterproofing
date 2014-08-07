@@ -3,14 +3,14 @@
   <button type="button" class="close" data-dismiss="alert">&times;</button>
 
   <% if @message.errors.any? %>
-  <h4>Uh-Oh, you made a mistake!</h4>
+  <h4><i class="fa fa-exclamation-triangle"></i> Uh-Oh, you made a mistake!</h4>
 
   <div id="error_explanation">
     The form contains <%= pluralize(@message.errors.count, "error") %>.
-    <ul>
+    <ul style="list-style:none;">
       <% @message.errors.full_messages.each do |msg| %>
       <li>
-        * <%= msg %>
+        <i class="fa fa-times-circle"></i> <%= msg %>
       </li>
       <% end %>
     </ul>

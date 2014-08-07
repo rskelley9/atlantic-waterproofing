@@ -22,4 +22,26 @@ class Message
     false
   end
 
+  def has_valid_email?
+    email_regex = %r{.+@.+\..+}
+
+    # returns false if invalid
+    !((self.email =~ email_regex).nil?)
+  end
+
+  def has_invalid_email?
+    email_regex = %r{.+@.+\..+}
+
+    # returns false if invalid
+    if self.email == nil
+      false
+    else
+      (self.email =~ email_regex).nil?
+    end
+  end
+
+  def has_confirmed_email?
+   self.email == self.email_confirmation
+ end
+
 end

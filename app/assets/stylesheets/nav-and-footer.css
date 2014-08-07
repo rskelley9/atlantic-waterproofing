@@ -1,3 +1,30 @@
+@media (max-width: 978px) {
+  img#nav-logo{
+    max-width: 100px;
+    max-height: 100px;
+    padding-bottom:2%;
+    margin-top: -7%;
+  }
+  .collapse.navbar-collapse#bs-example-navbar-collapse-1{
+    margin-top: 0%; /*fixed setting*/
+  }
+
+  ul.nav.navbar-nav li a{
+    margin-bottom: 0%;
+  }
+}
+
+@media (max-width: 768px) {
+  img#nav-logo{
+    max-height: 100px;
+    padding-bottom: 15%;
+    margin-top: -5%;
+  }
+  .navbar-header{
+    margin-bottom:1%;
+  }
+}
+
 .navbar.navbar-inverse.navbar-fixed-top{
   /*position: absolute;*/ /*absolute*/
 }

@@ -33,15 +33,14 @@ module ApplicationHelper
     end
   end
 
+# needs to be DRYed up
   def confirmation_error_for(params_message)
     if message_exists?(params_message)  && !(params_message.email.nil?)
-
       if params_message.invalid? && params_message.errors[:email_confirmation].any?
         return "has-error"
       else
         return ""
       end
-
     end
   end
 

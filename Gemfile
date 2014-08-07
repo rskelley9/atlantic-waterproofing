@@ -21,6 +21,9 @@ gem 'high_voltage'
 # For settting environmental variabls
 gem 'figaro'
 
+# Hidden fields/Anti-spam form submissions
+gem 'honeypot-captcha'
+
 # Forms
 gem 'simple_form'
 

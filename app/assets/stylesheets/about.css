@@ -22,3 +22,7 @@ padding-right: 3%;
 #myTab li.active{
   font-size:24px;
 }
+
+#wt-banner{
+  max-width: 100%;
+}

@@ -1,3 +1,25 @@
+@media (min-width: 979px) and (max-width: 1199px){
+  .alert.alert-info.col-sm-offset-3{
+    margin-left: 15%;
+  }
+  .alert.alert-info.col-sm-6{
+    width: 75%;
+  }
+
+  .about-me2{
+    min-width: 106% !important;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 978px){
+  .alert.alert-info.col-sm-offset-3{
+    margin-left: 15%;
+  }
+  .alert.alert-info.col-sm-6{
+    width: 75%;
+  }
+}
+
 .job-title-sm{
   color: #696969;
 }
@@ -23,6 +45,10 @@
   font-size:24px;
 }
 
+.about-me2{
+  min-width: 110%;
+}
+
 #wt-banner{
   max-width: 100%;
 }
@@ -46,6 +72,10 @@ img.about-me{
   top: 1%;
   right: 1%;
   z-index: 51;
+}
+
+.col-sm-offset-3 p.about-p{
+  margin-top: 2%;
 }
 
 #modal-close kbd{

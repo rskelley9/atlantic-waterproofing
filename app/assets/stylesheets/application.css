@@ -12,6 +12,7 @@
  *= require home
  *= require about
  *= require nav-and-footer
+ *= require contact
   */
 
 @import url(http://fonts.googleapis.com/css?family=Ubuntu);

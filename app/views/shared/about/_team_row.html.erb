@@ -5,20 +5,22 @@
     </div>
 
     <div class="col-sm-4">
-        <a href=" www.linkedin.com/pub/gregg-jensen/11/466/178">
+         <a href="#myModal" data-toggle="modal">
+        <!-- <a href="http://www.linkedin.com/pub/gregg-jensen/11/466/178"> -->
             <%= image_tag("gregg_jensen2.jpg", :alt => "Gregg Jensen", class: "img-responsive img-rounded", style:"min-width:220px;min-height: 220px") %>
-        </a>
-        <h3>Greg Jensen
+        <!-- </a> -->
+    </a>
+         <h3><a href="#myModal" data-toggle="modal">Greg Jensen</a>
             <div class="clearfix"></div>
             <small class="job-title-sm">Owner/Member</small>
         </h3>
-        <p>Gregg Jensen has been in the waterproofing industry for more than 17 years.  For the past 11 years, he has been co-owner of Atlantic Waterproofing & Restoration. Prior to Atlantic, Gregg was the Sales Manager at Harry S. Peterson Company for 6 years</p>
+        <p>Gregg Jensen has been in the waterproofing industry for more than 17 years.  For the past 11 years, he has been co-owner of Atlantic Waterproofing & Restoration. Prior to Atlantic, Gregg was the Sales Manager at Harry S. Peterson Company for 6 years <%= render partial: "shared/modals/gregg.html.erb" %></p>
     </div>
 
     <div class="col-sm-4">
-
-        <%= image_tag("bill_harton.jpg", :alt => "Bill Harton", class: "img-responsive img-rounded", style:"min-width:220px;min-height:220px;") %>
-
+        <a href="http://www.linkedin.com/pub/william-harton/15/818/266">
+            <%= image_tag("bill_harton.jpg", :alt => "Bill Harton", class: "img-responsive img-rounded", style:"min-width:220px;min-height:220px;") %>
+        </a>
         <h3>Bill Harton
             <div class="clearfix"></div>
             <small class="job-title-sm">Operations Manager</small>
@@ -28,8 +30,9 @@
     </div>
 
     <div class="col-sm-4">
-      <%= image_tag("ana_butts2.jpeg", :alt => "Ana Butts", class: "img-responsive img-rounded", style:"min-width:220px;min-height:220px;") %>
-
+        <a href="http://www.linkedin.com/pub/ana-butts/84/945/582">
+          <%= image_tag("ana_butts2.jpeg", :alt => "Ana Butts", class: "img-responsive img-rounded", style:"min-width:220px;min-height:220px;") %>
+      </a>
       <h3>Ana Butts
         <div class="clearfix"></div>
         <small class="job-title-sm">Asst. Project Manager</small>

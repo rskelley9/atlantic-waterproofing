@@ -16,7 +16,7 @@
 }
 
 .row.tabs-description .info{
-padding-right: 3%;
+  padding-right: 3%;
 }
 
 #myTab li.active{
@@ -25,4 +25,33 @@ padding-right: 3%;
 
 #wt-banner{
   max-width: 100%;
+}
+
+img.about-me{
+  max-width: 40%;
+}
+
+.alert-info hr{
+  visibility: hidden;
+}
+
+#myModal .alert-info{
+  /*background-color: rgb(91, 192, 222);*/
+  background-color: white;
+  color: black;
+}
+
+#modal-close{
+  position: absolute;
+  top: 1%;
+  right: 1%;
+  z-index: 51;
+}
+
+#modal-close kbd{
+  background-color: rgb(69, 130, 236);
+}
+
+#modal-close kbd:hover{
+  background-color:rgb(24, 99, 230);
 }

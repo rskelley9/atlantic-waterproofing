@@ -10,7 +10,7 @@
             <%= image_tag("gregg_jensen2.jpg", :alt => "Gregg Jensen", class: "img-responsive img-rounded", style:"min-width:220px;min-height: 220px") %>
         <!-- </a> -->
     </a>
-         <h3><a href="#myModal" data-toggle="modal">Greg Jensen</a>
+         <h3><a href="#myModal" data-toggle="modal">Gregg Jensen</a>
             <div class="clearfix"></div>
             <small class="job-title-sm">Owner/Member</small>
         </h3>
@@ -18,14 +18,14 @@
     </div>
 
     <div class="col-sm-4">
-        <a href="http://www.linkedin.com/pub/william-harton/15/818/266">
+        <a href="#myModal2" data-toggle="modal">
             <%= image_tag("bill_harton.jpg", :alt => "Bill Harton", class: "img-responsive img-rounded", style:"min-width:220px;min-height:220px;") %>
         </a>
-        <h3>Bill Harton
+        <a href="#myModal2" data-toggle="modal"><h3>Bill Harton</a>
             <div class="clearfix"></div>
             <small class="job-title-sm">Operations Manager</small>
         </h3>
-        <p>Bill is experienced in project management and passionate about problem solving and being part of a team. He has successfully managed and co-managed multiple projects in a small business environment, working with large commercial and government clients.</p>
+        <p>Bill is experienced in project management and passionate about problem solving and being part of a team. He has successfully managed and co-managed multiple projects in a small business environment, working with large commercial and government clients.<%= render partial: "shared/modals/bill.html.erb" %></p>
 
     </div>
 
@@ -37,6 +37,6 @@
         <div class="clearfix"></div>
         <small class="job-title-sm">Asst. Project Manager</small>
     </h3>
-    <p>Ana joined Alta Waterproofing in the first quarter of 2014. She has over seven years of experience in office and project management, and her planning and administrative skills are crucial to the day-to-day flow of Alta's business.</p>
+    <p>Ana joined Alta Waterproofing in the first quarter of 2014. She has over seven years of experience in office and project management, and her planning and administrative skills are crucial to the day-to-day flow of Alta's business.<%= render partial: "shared/modals/ana.html.erb" %></p>
 </div>
 </div>

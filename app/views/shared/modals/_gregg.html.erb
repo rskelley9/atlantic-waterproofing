@@ -1,7 +1,7 @@
-<div id="wrap" class="text-center">
+<span id="wrap" class="text-center" data-toggle="popover"data-content="Click to read more about Gregg Jensen">
   <!-- Button trigger modal -->
-  <a href="#myModal" data-toggle="modal">[More Info]</a>
-</div>
+  <a href="#myModal" data-toggle="modal">[ More Info ]</a>
+</span>
 
 <!-- Modal -->
 <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
@@ -58,3 +58,17 @@
   </div>
 </div>
 </div>
+
+<script>
+$(document).ready(function(){
+
+  $('[data-toggle="popover"]').popover({
+    trigger: 'hover',
+    'placement': 'bottom',
+    delay: {show: 100, hide: 200}
+  });
+
+
+
+})
+</script>

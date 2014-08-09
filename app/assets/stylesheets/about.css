@@ -61,7 +61,19 @@ img.about-me{
   visibility: hidden;
 }
 
-#myModal .alert-info{
+.popover.fade.bottom.in{
+  max-width: 250%;
+}
+
+.popover.fade.bottom.in .arrow{
+  top: -11px !important;
+}
+
+#bill-header{
+  margin-top: 1%;
+}
+
+#gregg-jensen .alert-info, #bill-harton .alert-info, #ana-butts .alert-info{
   /*background-color: rgb(91, 192, 222);*/
   background-color: white;
   color: black;

@@ -1,27 +1,81 @@
-<div id="wrap" class="text-center">
+<span id="wrap" class="text-center" data-toggle="popover"data-content="Click to read more about Bill Harton">
   <!-- Button trigger modal -->
-  <br>
-<!-- <button class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
-  Modal with blur effect
-</button> -->
-
-<a href="#myModal" data-toggle="modal">?</a>
-</div>
+  <a href="#bill-harton" data-toggle="modal">[ More Info ]</a>
+</span>
 
 <!-- Modal -->
-<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+<div class="modal fade" id="bill-harton" tabindex="-1" role="dialog" aria-labelledby="myModal2Label" aria-hidden="true">
   <div class="container">
     <div class="row">
-      <div class="alert alert-info col-sm-6 col-sm-offset-3 text-center">
-        <h1>Modal with blur effect</h1>
-        <h2>Put here whatever you want here</h2>
-        <h4>For instance, a login form or an article content</h4>
-        <h4><kbd>esc</kbd> or click anyway to close</h4>
-        <hr>
+      <div class="alert alert-info col-sm-6 col-sm-offset-3 text-justify">
+
         <div class="alert alert-info">
-          <button class="btn btn-primary btn-lg" data-dismiss="modal" data-target="#myModal">Click to Exit</button>
+          <div class="row">
+            <div class="col-xs-5">
+             <a href="http://www.linkedin.com/pub/gregg-jensen/11/466/178">
+              <%= image_tag("bill_harton.jpg", :alt => "Ana Butts", class: "img-responsive img-rounded about-me2") %>
+            </a>
+          </div>
+          <div class="col-xs-7" style="text-align:left;">
+            <h2 id="bill-header">Bill Harton<br /><small class="job-title-sm">Operations Manager</small></h2>
+            <p>
+              <i class="fa fa-envelope-o"></i>
+              <abbr title="Email">Direct Email</abbr>:
+              <a href="mailto:Jensen@ALTwp.com">Harton@ALTAwp.com
+              </a>
+            </p>
+            <p>
+              <i class="fa fa-phone"></i>
+              <abbr title="Phone">Work Phone</abbr>:
+              <a href="tel:410-379-0095">410.379.0095</a>
+            </p>
+            <p>
+              <i class="fa fa-fax"></i><abbr title="Fax"> Fax</abbr>: <a href="fax:410.379.1320">
+                410.379.1320
+              </a>
+            </p>
+
+            <p>
+              <i class="fa fa-linkedin-square"></i>
+              <abbr title="Email">LinkedIn</abbr>:
+              <a href="www.linkedin.com/pub/william-harton/15/818/266">
+                Profile
+              </a>
+            </p>
+          </div>
         </div>
       </div>
+      <p class="about-p">
+        Bill is experienced in project management and passionate about problem solving and being part of a team. He has successfully managed and co-managed multiple projects in a small business environment, working with large commercial and government clients.
+      </p>
+
+      <p class="about-p">Bill graduated Summa Cum Laude from the Isenberg School of Business Management at UMass Amherst in 2009. He accepted a project engineer position at <a href="http://www.yellowbook.com/profile/atlantic-waterproofing-and-restoration-llc_1542197319.html">Atlantic Waterproofing & Restoration</a> later that year.</p>
+
+      <p class="about-p">
+        After a successful three-year stint with Atlantic Waterproofing, Bill followed Gregg Jensen to the newly established Alta Waterproofing. He took over the Operations Manager position in 2013. Over the past five years working in the waterproofing business, Bill has managed and co-managed multiple projects ranging from $5,000 commercial jobs to $6 million dollar government projects. He has negotiated and completed change orders for multiple projects as well, and he has become adept at managing budgets.</a>
+      </p>
+      <a id="modal-close" data-dismiss="modal" data-target="#bill-harton">
+        <kbd>esc</kbd>
+      </a>
+      <hr>
+
+
+
     </div>
   </div>
 </div>
+</div>
+
+<script>
+$(document).ready(function(){
+
+  $('[data-toggle="popover"]').popover({
+    trigger: 'hover',
+    'placement': 'bottom',
+    delay: {show: 100, hide: 200}
+  });
+
+
+
+})
+</script>

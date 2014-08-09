@@ -3,7 +3,7 @@
   <button type="button" class="close" data-dismiss="alert">&times;</button>
 
   <% if @message.errors.any? %>
-  <h4><i class="fa fa-exclamation-triangle"></i> Uh-Oh, you made a mistake!</h4>
+  <h4><i class="fa fa-exclamation-triangle"></i> Uh-Oh, you've made a mistake!</h4>
 
   <div id="error_explanation">
     The form contains <%= pluralize(@message.errors.count, "error") %>.

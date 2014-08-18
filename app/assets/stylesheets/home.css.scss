@@ -7,13 +7,24 @@ margin-top: 125px !important;
 font-family: 'Ubuntu', sans-serif !important;
 }
 
-#frontpage-picture-large .img-responsive.img-rounded{
-margin-top: 5%;
-}
-
 #map-container .embed-responsive-item{
   width: 89%;
   height: 89%;
+}
+
+#slider-bs .backstretch{
+  border-radius: 10px
+}
+
+#frontpage-picture-large .polaroid{
+  margin-top: 10%;
+  border: 1px solid rgb(236,238,242);
+  border-radius: 10px;
+  padding: 10px;
+}
+
+#frontpage-picture-large .img-responsive.img-rounded{
+margin-top: 0%;
 }
 
 #call-now-well{

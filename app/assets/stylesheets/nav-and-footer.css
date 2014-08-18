@@ -140,9 +140,13 @@ ul.navbar-right{
   padding-right: 0px;
 }
 
-#email{
+#email.footer-content{
   text-align:center !important;
-  /*width: 120%;*/
+  white-space: nowrap;
+}
+
+#phone.footer-content, #fax.footer-content{
+  white-space: nowrap;
 }
 
 .footer-header{

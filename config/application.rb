@@ -30,7 +30,7 @@ module AltaJuly
 			config.action_mailer.smtp_settings = {
 				:address              => "smtp.gmail.com",
 				:port                 => 587,
-				:domain               => "altawp.com",
+				:domain               => "gmail.com",
 				:user_name            => ENV["GMAIL_USERNAME_PRO"],
 				:password             => ENV["GMAIL_PASSWORD_PRO"],
 				:authentication       => :plain,
@@ -39,7 +39,7 @@ module AltaJuly
 		end
 
 		config.action_mailer.default_url_options = {
-			:host => "yourdomain.dev"
+			:host => "alta-beta.herokuapp.com"
 		}
 
 	end

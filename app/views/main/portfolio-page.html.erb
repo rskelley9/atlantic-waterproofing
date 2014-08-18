@@ -4,9 +4,13 @@
       <!-- Page Heading -->
       <div class="row">
         <div class="col-lg-12">
-          <h1 class="page-header">Page Heading
+          <h1 class="page-header">Alta's Projects
             <small>Secondary Text</small>
           </h1>
+           <ol class="breadcrumb">
+            <li><a href="/">Home</a></li>
+            <li class="active">Portfolio-Page</li>
+          </ol>
         </div>
       </div>
       <!-- /.row -->
@@ -44,7 +48,12 @@
           <h3>Project Two</h3>
           <h4>Subheading</h4>
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut, odit velit cumque vero doloremque repellendus distinctio maiores rem expedita a nam vitae modi quidem similique ducimus! Velit, esse totam tempore.</p>
-          <a class="btn btn-primary" href="#">View Project <span class="glyphicon glyphicon-chevron-right"></span></a>
+          <!--    <a class="btn btn-primary" href="#">View Project <span class="glyphicon glyphicon-chevron-right"></span></a> -->
+
+          <%= link_to page_path('portfolio-items/project2'), class: "btn btn-primary" do %>
+          View Project<span class="glyphicon glyphicon-chevron-right"></span>
+          <% end %>
+
         </div>
       </div>
       <!-- /.row -->
@@ -62,7 +71,12 @@
           <h3>Project Three</h3>
           <h4>Subheading</h4>
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis, temporibus, dolores, at, praesentium ut unde repudiandae voluptatum sit ab debitis suscipit fugiat natus velit excepturi amet commodi deleniti alias possimus!</p>
-          <a class="btn btn-primary" href="#">View Project <span class="glyphicon glyphicon-chevron-right"></span></a>
+ <!--          <a class="btn btn-primary" href="#">View Project <span class="glyphicon glyphicon-chevron-right"></span></a> -->
+
+    <%= link_to page_path('portfolio-items/project2'), class: "btn btn-primary" do %>
+          View Project<span class="glyphicon glyphicon-chevron-right"></span>
+          <% end %>
+
         </div>
       </div>
       <!-- /.row -->
@@ -81,7 +95,12 @@
           <h3>Project Four</h3>
           <h4>Subheading</h4>
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo, quidem, consectetur, officia rem officiis illum aliquam perspiciatis aspernatur quod modi hic nemo qui soluta aut eius fugit quam in suscipit?</p>
-          <a class="btn btn-primary" href="#">View Project <span class="glyphicon glyphicon-chevron-right"></span></a>
+        <!--   <a class="btn btn-primary" href="#">View Project <span class="glyphicon glyphicon-chevron-right"></span></a> -->
+
+            <%= link_to page_path('portfolio-items/project1'), class: "btn btn-primary" do %>
+          View Project<span class="glyphicon glyphicon-chevron-right"></span>
+          <% end %>
+
         </div>
       </div>
       <!-- /.row -->
@@ -99,7 +118,12 @@
           <h3>Project Five</h3>
           <h4>Subheading</h4>
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid, quo, minima, inventore voluptatum saepe quos nostrum provident ex quisquam hic odio repellendus atque porro distinctio quae id laboriosam facilis dolorum.</p>
-          <a class="btn btn-primary" href="#">View Project <span class="glyphicon glyphicon-chevron-right"></span></a>
+      <!--     <a class="btn btn-primary" href="#">View Project <span class="glyphicon glyphicon-chevron-right"></span></a> -->
+
+        <%= link_to page_path('portfolio-items/project1'), class: "btn btn-primary" do %>
+          View Project<span class="glyphicon glyphicon-chevron-right"></span>
+          <% end %>
+
         </div>
       </div>
       <!-- /.row -->
@@ -118,15 +142,6 @@
             </li>
             <li>
               <a href="#">2</a>
-            </li>
-            <li>
-              <a href="#">3</a>
-            </li>
-            <li>
-              <a href="#">4</a>
-            </li>
-            <li>
-              <a href="#">5</a>
             </li>
             <li>
               <a href="#">&raquo;</a>

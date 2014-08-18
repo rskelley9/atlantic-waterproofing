@@ -9,6 +9,8 @@ Bundler.require(:default, Rails.env)
 module AltaJuly
 	class Application < Rails::Application
 
+		config.serve_static_assets = true
+
 
 		if Rails.env.development?
 

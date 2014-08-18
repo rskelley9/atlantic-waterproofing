@@ -14,7 +14,7 @@ gem 'sass-rails', '~> 4.0.0'
 # Heroku
 gem 'rails_12factor', group: :production
 
- gem 'unicorn', group: :production
+gem 'unicorn', group: :production
 
 #icons
 gem "font-awesome-rails"
@@ -23,7 +23,7 @@ gem "font-awesome-rails"
 gem 'backstretch-rails'
 
 #Static Pages
-gem 'high_voltage'
+gem 'high_voltage', group: :production, group: :development
 
 # For settting environmental variabls
 gem 'figaro'
@@ -67,9 +67,6 @@ end
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
-
-# Use unicorn as the app server
-# gem 'unicorn'
 
 # Use Capistrano for deployment
 # gem 'capistrano', group: :development

@@ -14,6 +14,8 @@ gem 'sass-rails', '~> 4.0.0'
 # Heroku
 gem 'rails_12factor', group: :production
 
+ gem 'unicorn', group: :production
+
 #icons
 gem "font-awesome-rails"
 

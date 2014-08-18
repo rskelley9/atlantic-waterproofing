@@ -23,7 +23,7 @@ gem "font-awesome-rails"
 gem 'backstretch-rails'
 
 #Static Pages
-gem 'high_voltage', group: :production, group: :development
+gem 'high_voltage', group: :production
 
 # For settting environmental variabls
 gem 'figaro'

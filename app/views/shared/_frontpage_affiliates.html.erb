@@ -28,3 +28,24 @@
  </div>
 
 </div>
+
+<script>
+function animationhover(element, animation){
+    element = $(element);
+    element.hover(
+        function() {
+            element.addClass('animated ' + animation);
+            //wait for animation to finish before removing classes
+            window.setTimeout( function(){
+                element.removeClass('animated ' + animation);
+            }, 2000);
+
+        });
+}
+
+$(document).ready(function(){
+    $('.org-logo').each(function() {
+        animationhover(this, 'bounce');
+    });
+});
+</script>

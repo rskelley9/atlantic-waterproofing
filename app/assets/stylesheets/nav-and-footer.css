@@ -145,7 +145,7 @@ ul.navbar-right{
   white-space: nowrap;
 }
 
-#phone.footer-content{
+#phone.footer-content, #fax.footer-content{
   white-space: nowrap;
 }
 

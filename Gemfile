@@ -34,8 +34,14 @@ gem 'honeypot-captcha'
 # Forms
 gem 'simple_form'
 
+# ------------------- ATTENTION!----------------
+# Add group development for production app,
+# we're keeping letter opener for the demo only!
+
 # Email testing
-gem "letter_opener", :group => :development
+gem "letter_opener"#, :group => :development
+
+# ------------------- ATTENTION! ---------------
 
 #Flash messages
 gem "bootstrap_flash_messages", "~> 1.0.0"

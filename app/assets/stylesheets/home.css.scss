@@ -8,23 +8,51 @@ font-family: 'Ubuntu', sans-serif !important;
 }
 
 #map-container .embed-responsive-item{
-  width: 89%;
-  height: 89%;
+width: 89%;
+height: 89%;
 }
 
 #slider-bs .backstretch{
-  border-radius: 10px
+border-radius: 10px;
+}
+
+#polaroid-slide{
+padding: 10px;
+border: 1px solid rgb(236,238,242);
+border-radius: 10px;
+
+}
+
+#frontpage-welcome-text{
+text-align:justify;
 }
 
 #frontpage-picture-large .polaroid{
-  margin-top: 10%;
-  border: 1px solid rgb(236,238,242);
-  border-radius: 10px;
-  padding: 10px;
+margin-top: 10%;
+border: 1px solid rgb(236,238,242);
+border-radius: 10px;
+padding: 10px;
 }
 
 #frontpage-picture-large .img-responsive.img-rounded{
 margin-top: 0%;
+}
+
+#welcome-button-wrapper{
+text-align:center;
+}
+
+#welcome-button{
+color: #2aabd2;
+background-color: white;
+display: inline-block;
+margin-top: 2%;
+}
+
+#welcome-button:hover{
+color: #ffffff;
+background-color: #31b0d5;
+border-color: #2aabd2;
 }
 
 #call-now-well{
@@ -35,15 +63,15 @@ font-size: 24px;
 }
 
 hr.invisible-rule{
-  margin-top: 5%;
-  margin-bottom: 5%;
-  visibility: hidden;
+margin-top: 5%;
+margin-bottom: 5%;
+visibility: hidden;
 }
 
 .org-logo{
-  max-width: 150px;
-  max-height: 100px;
-  margin: 0 auto;
+max-width: 150px;
+max-height: 100px;
+margin: 0 auto;
 }
 
 footer {

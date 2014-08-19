@@ -13,5 +13,6 @@
 //= require jquery
 //= require jquery_ujs
 //= require turbolinks
+//= require frontpage
 //= require 'jquery.backstretch'
 //= require_tree .

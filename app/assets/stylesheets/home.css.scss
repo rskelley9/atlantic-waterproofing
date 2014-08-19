@@ -23,6 +23,14 @@ border-radius: 10px;
 
 }
 
+#two, #three{
+display: none;
+}
+
+#head-two, #head-three{
+display: none;
+}
+
 #frontpage-welcome-text{
 text-align:justify;
 }
@@ -87,6 +95,12 @@ max-width: 1000px;
 
 .tab-text p{
 padding: 15px;
+}
+
+.polaroid-pic{
+border: 1px solid rgb(236,238,242);
+border-radius: 10px;
+padding: 10px;
 }
 
 .page.container .container{

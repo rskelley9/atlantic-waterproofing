@@ -10,7 +10,7 @@
       </button>
       <a class="navbar-brand" href="/">
         <!--   <img src="http://placehold.it/150x50&text=Logo" alt=""> -->
-        <%= image_tag("Logo1.png", alt:"Alta Waterproofing", id: "nav-logo") %>
+        <%= image_tag("Logo1.png", alt:"Alta Waterproofing", id: "nav-logo", class: "animated fadeInUpBig") %>
       </a>
     </div>
 
@@ -22,7 +22,7 @@
           <a href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-delay="1000" data-close-others="false">
             About <b class="caret"></b>
           </a>
-          <ul class="dropdown-menu">
+          <ul class="dropdown-menu animated">
             <li><%= link_to 'Our Team', page_path('about-owner'), tabindex: "-1" %></li>
             <li class="divider"></li>
             <li>

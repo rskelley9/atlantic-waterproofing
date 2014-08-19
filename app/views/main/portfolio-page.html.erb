@@ -18,20 +18,45 @@
       <!-- Project One -->
       <div class="row">
         <div class="col-sm-5">
+          <div class="polaroid-pic">
+            <a href="/main/portfolio-items/project1">
 
-          <a href="/main/portfolio-items/project1">
+              <%= image_tag "concrete-repairs.jpg", class: "img-responsive img-rounded", style: "max-height: 100%; max-width: 100%;" %>
 
-            <%= image_tag "concrete-repairs.jpg", class: "img-responsive img-rounded", style: "max-height: 100%; max-width: 100%;" %>
+            </a>
+          </div>
+        </div>
+        <div class="col-sm-7">
+          <h3>Cementitious Waterproofing at the National Mall</h3>
+          <h4>July 2014</h4>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium veniam exercitationem expedita laborum at voluptate. Labore, voluptates totam at aut nemo deserunt rem magni pariatur quos perspiciatis atque eveniet unde.</p>
 
-         </a>
+          <%= link_to page_path('portfolio-items/project1'), class: "btn btn-primary" do %>
+          View Project<span class="glyphicon glyphicon-chevron-right"></span>
+          <% end %>
 
+        </div>
+      </div>
+      <!-- /.row -->
+
+      <hr>
+
+      <!-- Project Two -->
+      <div class="row">
+        <div class="col-sm-5">
+          <div class="polaroid-pic">
+           <a href="/main/portfolio-items/project2">
+             <%= image_tag "js.jpg", class: "img-responsive img-rounded", style: "max-height: 100%; max-width: 100%;" %>
+           </a>
+         </div>
        </div>
        <div class="col-sm-7">
-        <h3>Cementitious Waterproofing at the National Mall</h3>
-        <h4>July 2014</h4>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium veniam exercitationem expedita laborum at voluptate. Labore, voluptates totam at aut nemo deserunt rem magni pariatur quos perspiciatis atque eveniet unde.</p>
+        <h3>Spray Applied Air Barriers</h3>
+        <h4>June 2014</h4>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut, odit velit cumque vero doloremque repellendus distinctio maiores rem expedita a nam vitae modi quidem similique ducimus! Velit, esse totam tempore.</p>
+        <!--    <a class="btn btn-primary" href="#">View Project <span class="glyphicon glyphicon-chevron-right"></span></a> -->
 
-        <%= link_to page_path('portfolio-items/project1'), class: "btn btn-primary" do %>
+        <%= link_to page_path('portfolio-items/project2'), class: "btn btn-primary" do %>
         View Project<span class="glyphicon glyphicon-chevron-right"></span>
         <% end %>
 
@@ -41,118 +66,101 @@
 
     <hr>
 
-    <!-- Project Two -->
+    <!-- Project Three -->
     <div class="row">
       <div class="col-sm-5">
-       <a href="/main/portfolio-items/project2">
-         <%= image_tag "js.jpg", class: "img-responsive img-rounded", style: "max-height: 100%; max-width: 100%;" %>
-       </a>
-     </div>
-     <div class="col-sm-7">
-      <h3>Spray Applied Air Barriers</h3>
-      <h4>June 2014</h4>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut, odit velit cumque vero doloremque repellendus distinctio maiores rem expedita a nam vitae modi quidem similique ducimus! Velit, esse totam tempore.</p>
-      <!--    <a class="btn btn-primary" href="#">View Project <span class="glyphicon glyphicon-chevron-right"></span></a> -->
+        <div class="polaroid-pic">
+          <a href="/main/portfolio-items/project2">
+            <%= image_tag "dc.jpg", class: "img-responsive img-rounded", style: "max-height: 100%; max-width: 100%;" %>
+          </a>
+        </div>
+      </div>
+      <div class="col-sm-7">
+        <h3>The Performing Arts Center of Baltimore</h3>
+        <h4>January 2014</h4>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis, temporibus, dolores, at, praesentium ut unde repudiandae voluptatum sit ab debitis suscipit fugiat natus velit excepturi amet commodi deleniti alias possimus!</p>
+        <!--          <a class="btn btn-primary" href="#">View Project <span class="glyphicon glyphicon-chevron-right"></span></a> -->
 
-      <%= link_to page_path('portfolio-items/project2'), class: "btn btn-primary" do %>
-      View Project<span class="glyphicon glyphicon-chevron-right"></span>
-      <% end %>
+        <%= link_to page_path('portfolio-items/project2'), class: "btn btn-primary" do %>
+        View Project<span class="glyphicon glyphicon-chevron-right"></span>
+        <% end %>
 
+      </div>
     </div>
-  </div>
-  <!-- /.row -->
+    <!-- /.row -->
 
-  <hr>
+    <hr>
 
-  <!-- Project Three -->
-  <div class="row">
-    <div class="col-sm-5">
-      <a href="/main/portfolio-items/project2">
-        <%= image_tag "dc.jpg", class: "img-responsive img-rounded", style: "max-height: 100%; max-width: 100%;" %>
-      </a>
+    <!-- Project Four -->
+    <div class="row">
+
+      <div class="col-sm-5">
+        <div class="polaroid-pic">
+          <a href="/main/portfolio-items/project3">
+            <%= image_tag "baltimore.JPG", class: "img-responsive img-rounded", style: "max-height: 100%; max-width: 100%;" %>
+          </a>
+        </div>
+      </div>
+      <div class="col-sm-7">
+        <h3>Columbia Discovery Center</h3>
+        <h4>October 2013</h4>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo, quidem, consectetur, officia rem officiis illum aliquam perspiciatis aspernatur quod modi hic nemo qui soluta aut eius fugit quam in suscipit?</p>
+        <!--   <a class="btn btn-primary" href="#">View Project <span class="glyphicon glyphicon-chevron-right"></span></a> -->
+
+        <%= link_to page_path('portfolio-items/project3'), class: "btn btn-primary" do %>
+        View Project<span class="glyphicon glyphicon-chevron-right"></span>
+        <% end %>
+
+      </div>
     </div>
-    <div class="col-sm-7">
-      <h3>The Performing Arts Center of Baltimore</h3>
-      <h4>January 2014</h4>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis, temporibus, dolores, at, praesentium ut unde repudiandae voluptatum sit ab debitis suscipit fugiat natus velit excepturi amet commodi deleniti alias possimus!</p>
-      <!--          <a class="btn btn-primary" href="#">View Project <span class="glyphicon glyphicon-chevron-right"></span></a> -->
+    <!-- /.row -->
 
-      <%= link_to page_path('portfolio-items/project2'), class: "btn btn-primary" do %>
-      View Project<span class="glyphicon glyphicon-chevron-right"></span>
-      <% end %>
+    <hr>
 
+    <!-- Project Five -->
+    <div class="row">
+      <div class="col-sm-5">
+        <div class="polaroid-pic">
+          <a href="/main/portfolio-items/project3">
+            <%= image_tag "cr.jpg", class: "img-responsive img-rounded", style: "max-height: 100%; max-width: 100%;" %>
+          </a>
+        </div>
+      </div>
+      <div class="col-xs-7">
+        <h3>Below-Grade Waterproofing</h3>
+        <h4>July 2013</h4>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid, quo, minima, inventore voluptatum saepe quos nostrum provident ex quisquam hic odio repellendus atque porro distinctio quae id laboriosam facilis dolorum.</p>
+        <!--     <a class="btn btn-primary" href="#">View Project <span class="glyphicon glyphicon-chevron-right"></span></a> -->
+
+        <%= link_to page_path('portfolio-items/project3'), class: "btn btn-primary" do %>
+        View Project<span class="glyphicon glyphicon-chevron-right"></span>
+        <% end %>
+
+      </div>
     </div>
-  </div>
-  <!-- /.row -->
+    <!-- /.row -->
 
-  <hr>
+    <hr>
 
-  <!-- Project Four -->
-  <div class="row">
-
-    <div class="col-sm-5">
-      <a href="/main/portfolio-items/project3">
-        <%= image_tag "baltimore.JPG", class: "img-responsive img-rounded", style: "max-height: 100%; max-width: 100%;" %>
-      </a>
+    <!-- Pagination -->
+    <div class="row text-center">
+      <div class="col-lg-12">
+        <ul class="pagination">
+          <li>
+            <a href="#">&laquo;</a>
+          </li>
+          <li class="active">
+            <a href="#">1</a>
+          </li>
+          <li>
+            <a href="#">2</a>
+          </li>
+          <li>
+            <a href="#">&raquo;</a>
+          </li>
+        </ul>
+      </div>
     </div>
-    <div class="col-sm-7">
-      <h3>Columbia Discovery Center</h3>
-      <h4>October 2013</h4>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo, quidem, consectetur, officia rem officiis illum aliquam perspiciatis aspernatur quod modi hic nemo qui soluta aut eius fugit quam in suscipit?</p>
-      <!--   <a class="btn btn-primary" href="#">View Project <span class="glyphicon glyphicon-chevron-right"></span></a> -->
+    <!-- /.row -->
 
-      <%= link_to page_path('portfolio-items/project3'), class: "btn btn-primary" do %>
-      View Project<span class="glyphicon glyphicon-chevron-right"></span>
-      <% end %>
-
-    </div>
-  </div>
-  <!-- /.row -->
-
-  <hr>
-
-  <!-- Project Five -->
-  <div class="row">
-    <div class="col-xs-5">
-      <a href="/main/portfolio-items/project3">
-        <%= image_tag "cr.jpg", class: "img-responsive img-rounded", style: "max-height: 100%; max-width: 100%;" %>
-      </a>
-    </div>
-    <div class="col-xs-7">
-      <h3>Below-Grade Waterproofing</h3>
-      <h4>July 2013</h4>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid, quo, minima, inventore voluptatum saepe quos nostrum provident ex quisquam hic odio repellendus atque porro distinctio quae id laboriosam facilis dolorum.</p>
-      <!--     <a class="btn btn-primary" href="#">View Project <span class="glyphicon glyphicon-chevron-right"></span></a> -->
-
-      <%= link_to page_path('portfolio-items/project3'), class: "btn btn-primary" do %>
-      View Project<span class="glyphicon glyphicon-chevron-right"></span>
-      <% end %>
-
-    </div>
-  </div>
-  <!-- /.row -->
-
-  <hr>
-
-  <!-- Pagination -->
-  <div class="row text-center">
-    <div class="col-lg-12">
-      <ul class="pagination">
-        <li>
-          <a href="#">&laquo;</a>
-        </li>
-        <li class="active">
-          <a href="#">1</a>
-        </li>
-        <li>
-          <a href="#">2</a>
-        </li>
-        <li>
-          <a href="#">&raquo;</a>
-        </li>
-      </ul>
-    </div>
-  </div>
-  <!-- /.row -->
-
-  <hr>
+    <hr>

@@ -28,7 +28,7 @@
 <script>
 $(document).ready(function() {
 
- $("#slider-bs").backstretch(["<%= asset_path 'block.jpeg' %>","<%= asset_path 'concrete-repairs.jpg' %>","<%= asset_path 'barren-construction.jpg' %>"], {duration: 5000, fade: "slow", lazyload: false});
+ $("#slider-bs").backstretch(["<%= asset_path 'block.jpeg' %>","<%= asset_path 'concrete-repairs.jpg' %>","<%= asset_path 'barren-construction.jpg' %>"], {duration: 5000, fade: "slow", lazyload: true});
 
 });
 
@@ -44,7 +44,7 @@ var headers = [
 "Alta Applies Water Repellants at Performing Arts Center"
 ];
 
-$(window).on("backstretch.show", function (e, instance) {
+$(window).on("backstretch.before", function (e, instance) {
   $(".overlay-header").text( headers[instance.index] );
   $(".overlay").text( texts[instance.index] );
 });

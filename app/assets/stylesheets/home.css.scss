@@ -27,7 +27,7 @@ border-radius: 10px;
 display: none;
 }
 
-.overlay-header{
+#head-two, #head-three{
 display: none;
 }
 
@@ -95,6 +95,12 @@ max-width: 1000px;
 
 .tab-text p{
 padding: 15px;
+}
+
+.polaroid-pic{
+border: 1px solid rgb(236,238,242);
+border-radius: 10px;
+padding: 10px;
 }
 
 .page.container .container{

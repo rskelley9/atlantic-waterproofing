@@ -35,21 +35,21 @@
 </div>
 
 <script>
-$(document).ready(function() {
+// $(document).ready(function() {
 
-  $("#slider-bs").backstretch(["<%= asset_path 'block.jpeg' %>","<%= asset_path 'concrete-repairs.jpg' %>","<%= asset_path 'barren-construction.jpg' %>"], {duration: 7000, fade: "slow", lazyload: true});
+//   $("#slider-bs").backstretch(["<%= asset_path 'block.jpeg' %>","<%= asset_path 'concrete-repairs.jpg' %>","<%= asset_path 'barren-construction.jpg' %>"], {duration: 7000, fade: "slow", lazyload: true});
 
-  var texts = [
-  "two", "three", "one"
-  ]
+//   var texts = [
+//   "two", "three", "one"
+//   ]
 
-  $(window).on("backstretch.before", function (e, instance) {
-    console.log(instance.index)
-    $('.caps').hide()
-    $('.overlay-header').hide();
-    $("#"+texts[instance.index]+"").fadeIn("slow");
-    $("#head-"+texts[instance.index]+"").fadeIn("slow");
-  });
+//   $(window).on("backstretch.before", function (e, instance) {
+//     console.log(instance.index)
+//     $('.caps').hide()
+//     $('.overlay-header').hide();
+//     $("#"+texts[instance.index]+"").fadeIn("slow");
+//     $("#head-"+texts[instance.index]+"").fadeIn("slow");
+//   });
 
-});
+// });
 </script>

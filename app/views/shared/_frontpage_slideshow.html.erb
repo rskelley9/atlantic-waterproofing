@@ -15,7 +15,18 @@
   <div class="col-md-5">
 
     <div id="slider-text">
-      <p>Alta has completed a variety of projects over the years. The increasing complexity of building and construction has resulted in a wide variety of different materials and interfaces. Alta Waterproofing engineers systems to accommodate most designs and construction details in the key risk area in any building.</p>
+      <h4 class="overlay-header" id="head-one">Waterproofing At the National Mall</h4>
+      <h4 class="overlay-header" id="head-two">New Spray Applied Air Barriers</h4>
+      <h4 class="overlay-header" id="head-three">Alta Applies Water Repellants at Performing Arts Center</h4>
+      <p class="caps" id="one">
+        Cementitious waterproofing is a unique chemical treatment for the waterproofing and protection of concrete. Structures can be waterproofed from the interior side of the wall by the process of osmosis; the crystalline formation migrates throughout the pores and capillary tracts of concrete even against strong hydrostatic pressure. The treatment is highly resistant to most aggressive substances. By preventing the intrusion of chemicals, salt water, sewage and other harmful materials, cementitious waterproofing protects concrete and reinforcing steel from deterioration and oxidation making it a good selection for elevator pits, sewage and water treatment tanks.
+      </p>
+      <p class="caps" id="two">
+        Alta has completed a variety of projects over the years. The increasing complexity of building and construction has resulted in a wide variety of different materials and interfaces. Alta Waterproofing engineers systems to accommodate most designs and construction details in the key risk area in any building.
+      </p>
+      <p class="caps" id="three">
+        Water repellent is a clear, filmless, penetrating product for virtually all above grade, vertical concrete, stucco, block and brick masonry. The treatment does not alter the color or texture of the surface, nor significantly affect the vapor transmission qualities of the substrate. The solution penetrates the substrate and chemically reacts to create a powerful barrier against water penetration. This barrier is resistant to ultraviolet and weather deterioration; however, it is necessary to reapply on a maintenance schedule every five to ten years.
+      </p>
       <p>View our <span><a type="button" class="btn btn-default btn-sm" href="main/portfolio-page" role="button">Portfolio</a></span> to view more of our work.</p>
     </div>
 
@@ -23,11 +34,22 @@
 
 </div>
 
-
 <script>
 $(document).ready(function() {
 
- $("#slider-bs").backstretch(["<%= asset_path 'block.jpeg' %>","<%= asset_path 'concrete-repairs.jpg' %>","<%= asset_path 'barren-construction.jpg' %>"], {duration: 3000, fade: 750});
+  $("#slider-bs").backstretch(["<%= asset_path 'block.jpeg' %>","<%= asset_path 'concrete-repairs.jpg' %>","<%= asset_path 'barren-construction.jpg' %>"], {duration: 7000, fade: "slow", lazyload: true});
+
+  var texts = [
+  "two", "three", "one"
+  ]
+
+  $(window).on("backstretch.before", function (e, instance) {
+    console.log(instance.index)
+    $('.caps').hide()
+    $('.overlay-header').hide();
+    $("#"+texts[instance.index]+"").fadeIn("slow");
+    $("#head-"+texts[instance.index]+"").fadeIn("slow");
+  });
 
 });
 </script>

@@ -19,6 +19,9 @@ gem 'unicorn', group: :production
 #icons
 gem "font-awesome-rails"
 
+#fix jquery turbolinks conflict
+gem "jquery-turbolinks"
+
 # Background Slide for Welcome Page
 gem 'backstretch-rails'
 

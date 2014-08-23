@@ -23,6 +23,10 @@ border-radius: 10px;
 
 }
 
+.polaroid-pic:hover {
+box-shadow: 10px 10px 5px #888888;
+}
+
 #two, #three{
 display: none;
 }

@@ -13,4 +13,13 @@ $(document).ready(function() {
     $("#head-"+texts[instance.index]+"").fadeIn("slow");
   });
 
+  $('#polaroid-slide').mouseenter(function(){
+    $('#slider-bs').backstretch("pause")
+  }).click(function() {
+   $('#slider-bs').backstretch("next")
+
+ }).mouseleave(function() {
+   $('#slider-bs').backstretch("resume")
+
+});
 });
